@@ -2,9 +2,9 @@
 This web scraper scrapes the website to get all sections of the Indian Penal Code.
 '''
 
-import csv
-import requests	
-from bs4 import BeautifulSoup
+import csv #Module to help create and append data in CSV format
+import requests	#Module to access webpages
+from bs4 import BeautifulSoup #Module to scrape webpage 
 
 url = "https://devgan.in/all_sections_ipc.php" #link of the webpage to be scraped
 response = requests.get(url)
